@@ -1,22 +1,22 @@
 .app {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   align-items: stretch;
 
-@media (max-width: 1023px){
-    grid-template-columns: repeat(2,1fr); /* smaller screens */
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr); /* smaller screens */
   }
 
-  @media (max-width: 560px){
-   display: flex;
-   flex-direction: column;
-   gap: 16px
+  @media (max-width: 560px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 .app2 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   align-items: stretch;
 }

@@ -22,12 +22,16 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
-    &:hover { background: #f9f9f9; }
+    &:hover {
+      background: #f9f9f9;
+    }
   }
 
   &__chevron {
     transition: transform 0.2s ease;
-    &.open { transform: rotate(180deg); }
+    &.open {
+      transform: rotate(180deg);
+    }
   }
 
   &__body {

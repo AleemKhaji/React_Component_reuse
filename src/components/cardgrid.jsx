@@ -30,15 +30,15 @@
 //               Description='Senior Tech Lead with 20 year of experience in Banking Domain' />
 //       </div>
 //       <div className="app2">
-     
+
 //               <ProfileCard
 //                   name="Anjali Sharma"
 //                   role="Frontend Engineer"
 //                   senior={true}
 //                   skills="Angular Developer"
-//                   Description="working as front developer with more than 5 years of experience" 
+//                   Description="working as front developer with more than 5 years of experience"
 //                   />
-                 
+
 //               <ProfileCard
 //                   name="Sharma"
 //                   role="Frontend Engineer"
@@ -61,9 +61,8 @@
 //   );
 // }
 
-
-import './cardgrid.scss'
-import ProfileCard from './card'
+import "./cardgrid.scss";
+import ProfileCard from "./card";
 
 // const profiles = [
 //   { id: 1, name: 'Anjali Sharma', role: 'Frontend Engineer', senior: true,
@@ -79,7 +78,7 @@ import ProfileCard from './card'
 export default function Cardgrid({ profiles = [] }) {
   return (
     <div className="app">
-      {profiles.map(profile => (
+      {profiles.map((profile) => (
         <ProfileCard
           key={profile.id}
           id={profile.id}
@@ -91,5 +90,5 @@ export default function Cardgrid({ profiles = [] }) {
         />
       ))}
     </div>
-  )
+  );
 }

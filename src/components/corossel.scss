@@ -1,15 +1,14 @@
 .carousel {
   width: 100%;
- 
 
   &__window {
-    overflow: hidden;        // hides cards outside the visible area
+    overflow: hidden; // hides cards outside the visible area
     width: 100%;
   }
 
   &__track {
     display: flex;
-    gap: 16px;               // must match GAP constant in jsx
+    gap: 16px; // must match GAP constant in jsx
     transition: transform 0.3s ease;
     will-change: transform;
   }
@@ -44,6 +43,6 @@
 
 // card must have fixed width — must match CARD_WIDTH constant
 .profile-card {
-  min-width: 260px;    // add this line to your existing card.scss
-  flex-shrink: 0;      // prevents cards from squishing
+  min-width: 260px; // add this line to your existing card.scss
+  flex-shrink: 0; // prevents cards from squishing
 }

@@ -15,7 +15,9 @@
   &:hover {
     background: lightgreen;
     transform: translateY(-4px);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
   }
 
   &:focus-visible {

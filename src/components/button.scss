@@ -1,5 +1,5 @@
 .btn {
-    width: fit-content;
+  width: fit-content;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -11,35 +11,54 @@
   font-family: sans-serif;
 
   // sizes
-  &--sm  { padding: 6px 14px;  font-size: 12px; }
-  &--md  { padding: 10px 20px; font-size: 14px; }
-  &--lg  { padding: 14px 28px; font-size: 16px; }
+  &--sm {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  &--md {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  &--lg {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
 
   // variants
   &--primary {
-    background: #1D9E75;
+    background: #1d9e75;
     color: white;
-    &:hover:not(:disabled) { background: #178060; transform: translateY(-1px); }
+    &:hover:not(:disabled) {
+      background: #178060;
+      transform: translateY(-1px);
+    }
   }
 
   &--secondary {
     background: transparent;
-    color: #1D9E75;
-    border: 1.5px solid #1D9E75;
-    &:hover:not(:disabled) { background: #E1F5EE; }
+    color: #1d9e75;
+    border: 1.5px solid #1d9e75;
+    &:hover:not(:disabled) {
+      background: #e1f5ee;
+    }
   }
 
   &--danger {
-    background: #D94040;
+    background: #d94040;
     color: white;
-    &:hover:not(:disabled) { background: #B83333; transform: translateY(-1px); }
+    &:hover:not(:disabled) {
+      background: #b83333;
+      transform: translateY(-1px);
+    }
   }
 
   &--ghost {
     background: transparent;
     color: #555;
     border: 1.5px solid #ddd;
-    &:hover:not(:disabled) { background: #f9f9f9; }
+    &:hover:not(:disabled) {
+      background: #f9f9f9;
+    }
   }
 
   // disabled state — works for all variants
@@ -61,5 +80,7 @@
 }
 
 @keyframes btn-spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
