@@ -67,6 +67,37 @@ const supportItems = [
   },
   {
     id: 2,
+    title: "How do I change my email address?",
+    content: <p>Go to Settings → Account → Update Email.</p>,
+  },
+  {
+    id: 3,
+    title: "Where can I view my order history?",
+    content: <p>Navigate to Profile → Orders to see past purchases.</p>,
+  },
+  {
+    id: 4,
+    title: "How do I delete my account?",
+    content: <p>Go to Settings → Security → Delete Account.</p>,
+  },
+  {
+    id: 5,
+    title: "Can I enable two-factor authentication?",
+    content: <p>Yes, go to Settings → Security → Two-Factor Authentication.</p>,
+  },
+  {
+    id: 6,
+    title: "How do I contact support?",
+    content: <p>Click Help → Contact Us and submit your query.</p>,
+  },
+  {
+    id: 7,
+    title: "How do I update my payment method?",
+    content: <p>Go to Settings → Billing → Payment Methods.</p>,
+  },
+
+  {
+    id: 8,
     title: "How do I contact support?",
     content: (
       <>
