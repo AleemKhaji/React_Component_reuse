@@ -5,7 +5,7 @@ import Carousel from "./components/corossel";
 import Disclosure from "./components/disclosure";
 import AccordionGroup from "./components/accordiongroup";
 import Button from "./components/button";
-import "./app.scss";
+import "./App.scss";
 
 const frontendProfiles = [
   {
