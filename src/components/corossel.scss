@@ -1,0 +1,49 @@
+.carousel {
+  width: 100%;
+ 
+
+  &__window {
+    overflow: hidden;        // hides cards outside the visible area
+    width: 100%;
+  }
+
+  &__track {
+    display: flex;
+    gap: 16px;               // must match GAP constant in jsx
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+
+    button {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background: lightblue;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &__dots {
+    display: flex;
+    gap: 6px;
+  }
+}
+
+// card must have fixed width — must match CARD_WIDTH constant
+.profile-card {
+  min-width: 260px;    // add this line to your existing card.scss
+  flex-shrink: 0;      // prevents cards from squishing
+}

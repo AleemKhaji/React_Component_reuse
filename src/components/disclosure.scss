@@ -1,0 +1,36 @@
+.disclosure {
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  border-left: 4px solid;
+
+  &__title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  &__message {
+    margin: 0;
+  }
+
+  // type variants
+  &--info {
+    background: #E6F1FB;
+    color: #0C3A6E;
+    border-color: #378ADD;
+  }
+
+  &--warning {
+    background: #FAEEDA;
+    color: #633806;
+    border-color: #BA7517;
+  }
+
+  &--error {
+    background: #FCEBEB;
+    color: #501313;
+    border-color: #D94040;
+  }
+}
